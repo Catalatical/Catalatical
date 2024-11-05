@@ -1,0 +1,6 @@
+-- hello, i am Catalatical, or Cat for short.
+-- i like cats, they are cute.
+-- i am trying to learn blender,HTML, Lua and Python!
+-- ai sometimes makes me afraid.
+-- you could reach me via discord (cat_pact)
+-- fun fact: i like cats
