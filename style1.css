@@ -1,0 +1,82 @@
+* {
+  transition: 0.7s ease;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 5rem;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(12, 18, 37, 0.9);
+  overflow-x: hidden;
+  transition: 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  text-wrap: nowrap;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.Panel {
+    writing-mode:vertical-lr;
+    text-orientation: sideways-right;
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 35%;
+    background-image: linear-gradient(45deg, rgba(11,21,26,0.3), rgba(7,25,36,0.7));
+    padding: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: rgba(7,25,36,0.7);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.Panel:hover {
+  border-color: white;
+  color: white;
+}
