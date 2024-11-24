@@ -7,48 +7,114 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link href="https://img.icons8.com/?size=100&id=14096&format=png&color=000000" rel="favicon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<link href="https://img.icons8.com/?size=100&id=41414&format=png&color=000000" rel="icon">
 </head>
 <body>
 
-<div id="myNav" class="overlay">
-  <a class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a onclick="prequel()">Prequel</a>
-    <a href="#">Week 1</a>
-    <a href="#">Week 2</a>
-    <a href="#">Week 3</a>
-    <a href="#">Summary</a>
+  <div id="myNav" class="overlay">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a onclick="showPrequel(); closeNav()">Prequel</a>
+      <a onclick="showWeek1(); closeNav()">Week 1</a>
+      <a onclick="showWeek2(); closeNav()">Week 2</a>
+      <a onclick="showWeek3(); closeNav()">Week 3</a>
+      <a onclick="showSummary(); closeNav()">Summary</a>
+    </div>
   </div>
-</div>
+  <!--page 1 info-->
+  <div class="Info">
+    <h1>Student Internship at Team Neusta</h1>
+    <p>
+    I had an Student Internship at Team Neusta, a company that provides IT solutions for small and medium-sized companies, i will tell you more about it in a different chapter
+    <br>
+    In this Internship there were 2 divisions, either you could join the Graphics department, or the Software department.
+    <br>
+    I was in the Software department because well, I was interested in programming.
+    </p>
+  </div>
+  
+<!--page 2 prequel-->
 
-<div class="Info">
-  <h1>Student Internship at Team Neusta</h1>
-  <p>
-  I had an Student Internship at Team Neusta, a company that provides IT solutions for small and medium-sized companies.
-  <br>
-  It also makes websites, apps and much more. it is a quite big company spanning accross germany.
-  <br>
-  In this Internship there were 2 divisions, either you could join the Graphics department, or the Software department.
-  <br>
-  I was in the Software department because well, I was interested in programming.
-  </p>
-</div>
+  <div class="prequel">
+    <h1>"The Digital Company"</h1>
+    <p>
 
-<div class="prequel">
-  <h1>Student Internship at Team Neusta</h1>
-  <p>
-  I had an Student Internship at Team Neusta, a company that provides IT solutions for small and medium-sized companies.
-  <br>
-  It also makes websites, apps and much more. it is a quite big company spanning accross germany.
-  <br>
-  In this Internship there were 2 divisions, either you could join the Graphics department, or the Software department.
-  <br>
-  I was in the Software department because well, I was interested in programming.
-  </p>
-</div>
+      <blockquote>
+        <p>
+        
+        <strong>Team Neusta: Your partner for development</strong> <br>
+        A warm welcome to you! We are around 1,200 digital experts and are passionate about all topics along the digital value chain. With us, you will find creative, conceptual and technical know-how from a single source. Our teams work across industries on intelligent digital solutions and applications for our customers in the DACH region.
+        <br><br>
+        Are you looking for a technical partner or strategic content sparring? Get to know us!
+        <br>
+        We will be happy to support you with our expertise from 30 years of IT experience and the performance of the entire group.
+        
+        </p>
+        <cite><a href="https://www.team-neusta.de/en" target="_blank">Team Neusta</a></cite>
+      </blockquote>
+    <p>
+      Team Neusta is a digital agency based in Bremen. The company specializes in a wide range of services across the digital value chain, <br>
+      including consulting, software development, digital marketing, and technology solutions. <br>
+      Known for its collaborative and innovative culture, Team Neusta prides itself on being a flexible and powerful partner for businesses navigating the complexities of digital transformation
+      with a commitment to creativity and excellence, they aim to foster growth and success for both their clients and employees.
+    </p>
+<br>
+    <h1>"The Time Before"</h1>
+    <p>
+      So, some know that i am interested in computer science and development, but i havent really used any serious programming languages.<br>
+      I have only used Scratch, LUA and Unreal Engine 5's blueprints to make some tiny games or projects.
+      nothing too serious. I also draw but thats irrevelant.
+      <br>
+      Ive been wanting to learn a real programming language for a long time and just didnt find a time to do so.<br><br>
+      and when we were supposed to apply for an internship, my first thought was mediamarkt, which was a really bad idea.
+      thanks to someone who I know from russian class, who told me about this company
+      and I immediately applied for it, and they accepted me quite fast.
+      <br>
+      <br>
+      I was quite glad that i got a spot there, the last one even. 
+      I just didnt know how big the company was.
+      
+      <br><br><br>
+      -end of prequel-
+    </p>
+  </div>
+  
+  <div class="week1">
+    <!-- content for week 1 -->
+    <h1>The First Week</h1>
+    <div class="maincard">
+      <div class="card">DAY 1</div>
+      <div class="card">DAY 2</div>
+      <div class="card">DAY 3</div>
+      <div class="card">DAY 4</div>
+      <div class="card">DAY 5</div>
 
-<p>you can click the panel button to open the navigation menu and read more about the specific weeks.</p>
+    </div>
+<!--experimental-->
+
+
+
+<!--experimental-->
+
+  </div>
+  
+  <div class="week2">
+    <!-- content for week 2 -->
+  </div>
+  
+  <div class="week3">
+    <!-- content for week 3 -->
+  </div>
+  
+  <div class="summary">
+    <!-- content for summary -->
+  </div>
+
+<p class="style-small">you can click the panel button to open the navigation menu and read more about the specific chapters</p>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="Panel">&#9776; PANEL</span>
 
 <script src="scrpt.js">

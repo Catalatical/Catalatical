@@ -8,14 +8,38 @@ function openNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
-function prequel() {
-  var infos = document.getElementsByClassName("Info");
-  for (var i = 0; i < infos.length; i++) {
-    infos[i].style.display = "none";
+  function showPrequel() {
+    hideAll();
+    document.querySelector('.prequel').style.display = 'block';
   }
-  var prequels = document.getElementsByClassName("prequel");
-  for (var i = 0; i < prequels.length; i++) {
-    prequels[i].style.display = "block";
+  
+  function showWeek1() {
+    hideAll();
+    document.querySelector('.week1').style.display = 'block';
+  }
+  
+  function showWeek2() {
+    hideAll();
+    document.querySelector('.week2').style.display = 'block';
+  }
+  
+  function showWeek3() {
+    hideAll();
+    document.querySelector('.week3').style.display = 'block';
+  }
+  
+  function showSummary() {
+    hideAll();
+    document.querySelector('.summary').style.display = 'block';
+  }
+  
+  function hideAll() {
+
+    document.querySelector('.prequel').style.display = 'none';
+    document.querySelector('.week1').style.display = 'none';
+    document.querySelector('.week2').style.display = 'none';
+    document.querySelector('.week3').style.display = 'none';
+    document.querySelector('.summary').style.display = 'none';
+    document.querySelector('.Info').style.display = 'none';
   }
 
-}

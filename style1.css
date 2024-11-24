@@ -4,10 +4,27 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  background-color: black;
+  background-image:
+      radial-gradient(
+      farthest-corner at 40px 40px,
+      rgba(0, 0, 0, 1) 0%,
+      rgb(9, 13, 24) 100%);
+      background-position: center;
+      background-repeat: round;
+      background-size: cover;
+      background-attachment: fixed;
   color: white;
-  margin: 5rem;
+  margin: 7rem;
 }
+
+h1 {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 
 .overlay {
   height: 100%;
@@ -16,7 +33,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(12, 18, 37, 0.9);
+  background-image: linear-gradient(45deg, rgb(1, 0, 3), rgb(7, 17, 41));
   overflow-x: hidden;
   transition: 1s cubic-bezier(0.65, 0, 0.35, 1);
 }
@@ -63,10 +80,11 @@ body {
     writing-mode:vertical-lr;
     text-orientation: sideways-right;
     font-size: 30px;
+    margin-left: -6rem;
     letter-spacing: 0.5rem;
     font-weight: 600;
     position: absolute;
-    top: 35%;
+    top: 30%;
     background-image: linear-gradient(45deg, rgba(11,21,26,0.3), rgba(7,25,36,0.7));
     padding: 1rem;
     border-radius: 1rem;
@@ -80,3 +98,116 @@ body {
   border-color: white;
   color: white;
 }
+
+.Info {
+  display: none;;;;;;
+}
+
+.prequel {
+  display:none;;;;
+}
+
+.week1 {
+  display:block;;
+}
+
+.week2 {
+  display:none;;
+}
+
+.week3 {  
+  display:none;;   
+}
+
+.summary {
+  display:none;;
+}
+
+blockquote {
+  color: rgba(189, 212, 255, 0.8);
+  font-family: Tahoma, sans-serif;
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+  border-style: solid;
+  border-radius: 2rem;
+  text-align: justify;
+  padding: 1rem;
+  border-color: rgba(189, 212, 255, 0.3);
+  background-image: linear-gradient(45deg, rgba(11,21,26,0.2), rgba(7,25,36,0.7));
+  backdrop-filter: blur(0.5rem);
+}
+
+blockquote p::before,
+blockquote p::after {
+   content: "“";
+   font-family: monospace;
+   font-size: 7rem;
+   margin: -2.2rem 0 0 -0rem;
+   position: absolute;
+   opacity: 0.5;
+}
+
+blockquote p::after {
+  content: "”";
+  margin: -1rem -0rem 0 0rem;
+}
+
+blockquote cite {
+  font-size: 1.5rem;
+}
+
+blockquote strong {
+  margin-left: 4rem;
+  font-size: 1.7rem;
+}
+
+blockquote p {
+  font-style: italic;
+  text-align: justify;
+}
+
+
+blockquote a {
+  color: rgb(86, 134, 177);
+  font-weight: 600;
+}
+
+
+.style-small {
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+p {
+  text-align: justify;
+}
+
+.maincard {
+  border-style: solid;
+  padding: 2rem;
+  border-radius: 3rem;
+  border-color: rgba(21, 58, 100, 0.7);
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  border-style:solid;
+  display: inline-grid;
+  padding: 2rem 3rem 1.6rem 3rem;
+  border-radius: 1rem;
+  border-color: rgba(21, 58, 100, 0.7);
+  background-image:linear-gradient(45deg, rgba(11,21,26,0.2), rgba(7,25,36,1));
+  font-size: 2rem;
+  font-family: "league spartan";
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.card:hover {
+  border-color: rgb(82, 125, 189);
+  transform: scale(1.1);
+}
+
