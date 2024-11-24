@@ -19,18 +19,25 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 3rem;
+  color: #aaafcc;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
+/*
+
+
+
+*/
 
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
   background-image: linear-gradient(45deg, rgb(1, 0, 3), rgb(7, 17, 41));
@@ -76,15 +83,23 @@ h1 {
   }
 }
 
-.Panel {
+
+/**/
+/*PANEL EVENT*/
+/**/
+
+
+.Panel{
     writing-mode:vertical-lr;
     text-orientation: sideways-right;
+    text-align: center;
     font-size: 30px;
     margin-left: -6rem;
     letter-spacing: 0.5rem;
     font-weight: 600;
-    position: absolute;
+    position: fixed;
     top: 30%;
+    width: 2rem;
     background-image: linear-gradient(45deg, rgba(11,21,26,0.3), rgba(7,25,36,0.7));
     padding: 1rem;
     border-radius: 1rem;
@@ -94,34 +109,235 @@ h1 {
     padding-bottom: 3rem;
 }
 
-.Panel:hover {
+.Close {
+  writing-mode:vertical-lr;
+  opacity: 0;
+  display: none;
+    text-orientation: sideways-right;
+    text-align: center;
+    font-size: 30px;
+    margin-left: -6rem;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+    position: fixed;
+    top: 65%;
+    width: 2rem;
+    background-image: linear-gradient(45deg, rgba(11,21,26,0.3), rgba(7,25,36,0.7));
+    padding: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: rgba(7,25,36,0.7);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-wrap: nowrap;
+}
+
+.PanelAnim {
+  display: block;
+  animation-name: PanelEvent;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.CloseAnim {
+  display: block;
+  animation-name: CloseEvent;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.PanelAnimEnd {
+  display: block;
+  animation-name: PanelEventEnd;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  
+}
+
+.CloseAnimEnd {
+  display: block;
+  animation-name: CloseEventEnd;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  
+}
+
+@keyframes CloseEvent {
+  0% {opacity: 0;
+  top: 100%;
+  }
+
+  100% {
+    opacity: 1;
+    top: 53%;
+  }
+}
+
+@keyframes PanelEvent {
+  0% {
+  top: 30%;
+  }
+  100% {
+  top: 13%;
+  }
+
+}
+
+@keyframes CloseEventEnd {
+  100% {opacity: 0;
+  top: 100%;
+  }
+
+  0% {
+    opacity: 1;
+    top: 53%;
+  }
+}
+
+@keyframes PanelEventEnd {
+  100% {
+  top: 30%;
+  }
+  0% {
+  top: 13%;
+  }
+
+}
+
+.Close:hover{
   border-color: white;
   color: white;
 }
+
+.Panel:hover{
+  border-color: white;
+  color: white;
+}
+
+
+
+/*>:(*/
+/*PANEL EVENT*/
+/**/
+
 
 .Info {
   display: none;;;;;;
 }
 
 .prequel {
-  display:none;;;;
+  display: none;;;;
 }
 
 .week1 {
-  display:block;;
+  display: block;;
 }
 
 .week2 {
-  display:none;;
+  display: none;;
 }
 
 .week3 {  
-  display:none;;   
+  display: none;;   
 }
 
 .summary {
-  display:none;;
+  display: none;;
 }
+
+/**/
+
+.day1 {
+  display: none;;
+}
+
+
+
+
+
+
+
+.subcard {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  background: rgb(17, 20, 34);
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 0%;
+  top: 0;
+  padding: 3rem;
+}
+
+.day {
+  display: block;
+}
+
+.hide {
+  display:none;
+}
+
+.infocard {
+  border-style:solid;
+  display: block;
+  border-radius: 1rem;
+  border-color: rgba(21, 58, 100, 0.7);
+  background-image:linear-gradient(45deg, rgba(11,21,26,0.2), rgba(7,25,36,1));
+  padding: 2rem;
+
+
+}
+
+.shown {
+  display: block;
+  animation-name: showcard;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hidden {
+  display: block;
+  animation-name: showcardEnd;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showcard {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes showcardEnd {
+  100% {
+    height: 0px;
+    opacity: 0;
+  }
+  0% {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+
 
 blockquote {
   color: rgba(189, 212, 255, 0.8);
@@ -151,10 +367,12 @@ blockquote p::after {
 blockquote p::after {
   content: "”";
   margin: -1rem -0rem 0 0rem;
+  z-index: -1;
 }
 
 blockquote cite {
   font-size: 1.5rem;
+  z-index: 1;
 }
 
 blockquote strong {
@@ -171,13 +389,31 @@ blockquote p {
 blockquote a {
   color: rgb(86, 134, 177);
   font-weight: 600;
+  text-decoration: none;
+}
+
+blockquote a:hover {
+  color: rgb(86, 134, 177);
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 
 .style-small {
   font-size: 15px;
   opacity: 0.5;
+  text-align: center;
+  margin-top: 10rem;
 }
+
+.style-gradient {
+  background-image: linear-gradient(-45deg, rgb(105, 110, 168), rgb(200, 200, 220));
+  color: transparent;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-clip: text;
+}
+
 
 p {
   text-align: justify;

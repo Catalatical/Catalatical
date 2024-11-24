@@ -56,15 +56,15 @@
         </p>
         <cite><a href="https://www.team-neusta.de/en" target="_blank">Team Neusta</a></cite>
       </blockquote>
-    <p>
+    <p class="style-gradient">
       Team Neusta is a digital agency based in Bremen. The company specializes in a wide range of services across the digital value chain, <br>
       including consulting, software development, digital marketing, and technology solutions. <br>
       Known for its collaborative and innovative culture, Team Neusta prides itself on being a flexible and powerful partner for businesses navigating the complexities of digital transformation
       with a commitment to creativity and excellence, they aim to foster growth and success for both their clients and employees.
     </p>
 <br>
-    <h1>"The Time Before"</h1>
-    <p>
+    <h1 class="style-title">"The Time Before"</h1>
+    <p class="style-gradient">
       So, some know that i am interested in computer science and development, but i havent really used any serious programming languages.<br>
       I have only used Scratch, LUA and Unreal Engine 5's blueprints to make some tiny games or projects.
       nothing too serious. I also draw but thats irrevelant.
@@ -87,15 +87,48 @@
     <!-- content for week 1 -->
     <h1>The First Week</h1>
     <div class="maincard">
-      <div class="card">DAY 1</div>
-      <div class="card">DAY 2</div>
-      <div class="card">DAY 3</div>
-      <div class="card">DAY 4</div>
-      <div class="card">DAY 5</div>
+      <div class="card" onclick="showDay(1)">DAY 1</div>
+      <div class="card" onclick="showDay(2)">DAY 2</div>
+      <div class="card" onclick="showDay(3)">DAY 3</div>
+      <div class="card" onclick="showDay(4)">DAY 4</div>
+      <div class="card" onclick="showDay(5)">DAY 5</div>
 
     </div>
 <!--experimental-->
 
+<div class="subcard">
+  <div class="infocard">
+    <div id="day1" class="day">
+      <h2>Day 1 // Introduction</h2>
+            <p>it was a good day, we all (4) interns had sat in the lobby for about 5 minutes until our supervisor came to greet us, she started with a tour, that showed like how to navigate in here
+            , we didnt do anything really significant except use lego brainstorm and the additional software to make some kind of mech that moved and to finish its goal, which was a simple obstacle.
+            </p>
+    </div>
+
+    <div id="day2" class="day">
+      <h2>Day 2 // Testing</h2>
+            <p>in this day, i reprogrammed the mech to do silly things like get aggressive and spin or make it ask simple math questions, the day was not that
+            interesting.</p>
+    </div>
+
+    <div id="day3" class="day">
+      <h2>Day 3 // HTML & CSS</h2>
+            <p>that day the original supervisor was sick and we had a new one, and we learnt about HTML, using a website called w3schools.com, very useful.
+            and since that day i just make projects called "project 1", "project 4" and so on.
+            i also learned to use CSS which is a satisfying language that makes out the design, while html makes out the structure.</p>
+    </div>
+
+    <div id="day4" class="day">
+      <h2>Day 4 // wasnt there</h2>
+    </div>
+
+    <div id="day5" class="day">
+      <h2>Day 5 // Tour</h2>
+            <p>that day we were just learning and testing html and css, we did not do anything significant until the supervisor guided us around the company with more details, and i did learn more things
+            like how team neusta is split into divisions like "Software development", "Mobile Solutions", "HEC" and so on, pretty interesting.</p>
+    </div>
+  </div>
+</div>
 
 
 <!--experimental-->
@@ -116,6 +149,7 @@
 
 <p class="style-small">you can click the panel button to open the navigation menu and read more about the specific chapters</p>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="Panel">&#9776; PANEL</span>
+<span style="font-size:30px;cursor:pointer" onclick="closeSub()" class="Close">&times; CLOSE</span>
 
 <script src="scrpt.js">
 </script>
