@@ -1,4 +1,4 @@
-/* Open when someone clicks on the span element */
+/* Open onclick panel */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
@@ -32,6 +32,11 @@ function openNav() {
     hideAll();
     document.querySelector('.summary').style.display = 'block';
   }
+
+  function showDev() {
+    hideAll();
+    document.querySelector('.dev').style.display = 'block';
+  }
   
   function hideAll() {
 
@@ -40,6 +45,7 @@ function openNav() {
     document.querySelector('.week2').style.display = 'none';
     document.querySelector('.week3').style.display = 'none';
     document.querySelector('.summary').style.display = 'none';
+    document.querySelector('.dev').style.display = 'none';
     document.querySelector('.Info').style.display = 'none';
   }
 
